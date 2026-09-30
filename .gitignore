@@ -1,0 +1,12 @@
+node_modules/
+public/
+.env
+.env.local
+.netlify/
+dist/
+*.log
+.DS_Store
+tsconfig.tsbuildinfo
+test/ui/harness.js
+test-results/
+playwright-report/

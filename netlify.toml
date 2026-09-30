@@ -1,0 +1,27 @@
+# The "Discount Deploy" Merchant Center Custom Application, plus the API it calls.
+#
+# One site serves both: mc-scripts builds the app into `public/`, and the API runs
+# as a Netlify Function at /api/*. Same origin, so the app needs no CORS handling
+# and no CSP `connect-src` beyond 'self'.
+#
+# The commercetools credentials for BOTH projects are site environment variables,
+# read only inside the function. They are never part of the browser bundle.
+
+[build]
+  command = "npm run build"
+  publish = "public"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "22"
+  MC_APP_ENV = "production"
+  NODE_ENV = "production"
+
+[functions]
+  node_bundler = "esbuild"
+
+# SPA routing — everything that is not the API falls through to index.html.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
