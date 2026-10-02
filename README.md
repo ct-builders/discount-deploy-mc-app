@@ -161,8 +161,8 @@ placeholders.
 ## Checks
 
 ```bash
-npm run predeploy     # typecheck, lint, 53 unit tests, production build
-npm run test:ui       # 15 browser specs over the real components
+npm run predeploy     # typecheck, lint, 64 unit tests, production build
+npm run test:ui       # 16 browser specs over the real components
 ```
 
 `predeploy` is the gate and is fast enough to run on every deploy. The browser
