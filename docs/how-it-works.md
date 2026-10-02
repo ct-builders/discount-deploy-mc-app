@@ -148,7 +148,7 @@ answered before the token check, because a browser sends `OPTIONS` without the
 - **No rollback.** There is no snapshot of what production looked like
   beforehand. For batched, reviewable, revertible releases across products and
   categories as well as discounts, that is what
-  [release-manager](https://github.com/ct-builders/release-manager) is for; this
+  [ct-release-manager](https://github.com/ct-builders/ct-release-manager) is for; this
   tool is the narrow case of moving discounts across.
 - **A discount with no key cannot be deployed.** The whole upsert is keyed by
   `key`, and one cannot be invented in the target without losing the ability to

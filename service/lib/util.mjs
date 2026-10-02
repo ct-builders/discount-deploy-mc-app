@@ -7,7 +7,7 @@
 /**
  * util.mjs — shared helpers.
  *
- * Adapted from ct-builders/release-manager (packages/release-deploy), narrowed to
+ * Adapted from ct-builders/ct-release-manager (packages/release-deploy), narrowed to
  * the four discount resources.
  */
 
