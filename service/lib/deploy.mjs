@@ -7,7 +7,7 @@
 /**
  * deploy.mjs — validate and upsert a discount bundle into the target project.
  *
- * Adapted from ct-builders/release-manager (packages/release-deploy).
+ * Adapted from ct-builders/ct-release-manager (packages/release-deploy).
  *
  * Idempotent, by key. For each discount: create it if the key is absent,
  * otherwise diff field by field and send only the update actions for what

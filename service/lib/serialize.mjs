@@ -7,7 +7,7 @@
 /**
  * serialize.mjs — read discounts out of the stage project as a portable bundle.
  *
- * Adapted from ct-builders/release-manager (packages/release-deploy).
+ * Adapted from ct-builders/ct-release-manager (packages/release-deploy).
  *
  * A commercetools id means nothing in another project, so nothing id-shaped
  * survives serialization:
